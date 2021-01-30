@@ -1,0 +1,22 @@
+Crear servidor paso a paso:
+
+Primero para crear un servidor, hay que usar 3 comandos
+cd, screen y java
+
+1º paso: usando el comando CD ir a la carpeta donde el servidor se úbica
+2º paso: Crear una screen, para crearlo es necesario el comando "screen -S <nombre>", con el nombre vamos a poder identificarlo.
+3º paso: Una vez que hayamos creado la screen, vamos a estar en el mismo sitio de donde la creamos, aqui vamos a ejecutar "java -Xmx<máxima memoria> -Xms<memoria base> -jar ./archivo.jar nogui
+4º paso: Listo, ya podes cerrar la consola y el servidor va a seguir corriendo
+
+Como entrar a la consola de un servidor, hay que usar solo 1 comando
+screen
+1º paso: Es fácil, solo es necesario ejecutar un comando "screen -r <nombre>"
+
+posible problema:
+Te olvidate el nombre de la screen, hace lo siguiente ejecuta "screen -ls" para ver todas las screen
+
+Como salir de una screen una vez ya la hayamos creado, es necesario 1 comando:
+1º paso: Dentro de la consola apretar ctrl + a + d así salir de la misma
+
+Como eliminar una screen comandos necesario 1:
+1º paso: Ejecutar fuera de la screen "screen -Xs quit <nombre>"
